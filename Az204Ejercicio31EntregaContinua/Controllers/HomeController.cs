@@ -15,12 +15,12 @@ namespace Az204Ejercicio31EntregaContinua.Controllers
 
         public IActionResult Index()
         {
-            ViewData["SALUDO"] = "Bienvenido a CI/CD GitHub";
+            ViewData["SALUDO"] = "Bienvenido a CI/CD  GitHub";
             Random random = new Random();
             List<int> numeros = new List<int>();
-            for (int i = 1; i <= 10; i++)
+            for (int i = 1; i <= 5; i++)
             {
-                int num = random.Next(1, 20);
+                int num = random.Next(1, 5);
                 numeros.Add(num);
             }
             return View(numeros);
